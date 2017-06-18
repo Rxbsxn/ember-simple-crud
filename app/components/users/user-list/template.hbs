@@ -1,9 +1,5 @@
 {{#each users as |user|}}
-  <p>
-    This is user: {{user.name}}
-    <br>
-    His Id is: {{user.id}}
-  </p>
+  {{users/user-list/user user=user}}
 {{else}}
   <p>Sorry currently we have no users in our database</p>
 {{/each}}
